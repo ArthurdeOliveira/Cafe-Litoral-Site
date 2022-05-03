@@ -1,0 +1,177 @@
+:root{
+  --red:#ff3838;
+}
+
+*{
+  font-family: 'Arial', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  transition:all .2s linear;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+body{
+  background:#f7f7f7;
+}
+
+section{
+  padding:8rem 9%;
+}
+.heading{
+  text-align: center;
+  font-size: 3.5rem;
+  padding:1rem;
+  color:#666;
+}
+
+.heading span{
+  color:var(--red);
+}
+
+.btn{
+  display: inline-block;
+  padding:.8rem 3rem;
+  border:.2rem solid var(--red);
+  color:var(--red);
+  cursor: pointer;
+  font-size: 1.7rem;
+  border-radius: .5rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  margin-top: 1rem;
+}
+
+.btn::before{
+  content: '';
+  position: absolute;
+  top:0; right: 0;
+  width:0%;
+  height:100%;
+  background:var(--red);
+  transition: .3s linear;
+  z-index: -1;
+}
+
+.btn:hover::before{
+  width:100%;
+  left: 0;
+}
+
+.btn:hover{
+  color:#fff;
+}
+
+header{
+    position: fixed;
+    top:0; left: 0; right:0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:#fff;
+    padding:2rem 9%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  }
+  
+  header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color:#666;
+  }
+  
+  header .logo i{
+    padding-right: .5rem;
+    color:var(--red);
+  }
+  
+  header .navbar a{
+    font-size: 2rem;
+    margin-left: 2rem;
+    color:#666;
+  }
+  
+  header .navbar a:hover{
+    color:var(--red);
+  }
+  
+  #menu-bar{
+    font-size: 3rem;
+    cursor: pointer;
+    color:#666;
+    border:.1rem solid #666;
+    border-radius: .3rem;
+    padding:.5rem 1.5rem;
+    display: none;
+  }
+
+.coffee .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+.coffee .box-container .box{
+    position: absolute;
+    top: 20%; left: 29.5%;
+    align-items: center;
+    width:600px;
+    padding:2rem;
+    padding-bottom: 22rem;
+    background:#f0eada;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border:.1rem solid rgba(0,0,0,.3);
+    border-radius: .5rem;
+    text-align: center;
+}
+.coffee .box-container .box img{
+    height:30rem;
+    object-fit:contain;
+    width:100%;
+    border-radius: .5rem;
+}
+.coffee .box-container .box .receita{
+    position: absolute;
+    top: 64%; left: 8.5%;
+    padding:2rem;
+    background:#f7f7f7;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border:.1rem solid rgba(0,0,0,.3);
+    border-radius: .5rem;
+    width:500px;
+    max-height: 210px;
+    text-align: center;
+}
+.coffee .box-container .box .receita h3{
+    display: flex;
+    color:#333;
+    font-size: 2.5rem;
+    padding-top: 1rem;
+}
+.coffee .box-container .box .receita p{
+    display: flex;
+    color:#333;
+    font-size: 2rem;
+    padding-top: 0.5rem;
+}
+.coffee .box-container .box .receita span{
+    color:var(--red);
+}
+
+.coffee .box-container .box .receita .price{
+    display: flex;
+    color:#333;
+    font-size: 2rem;
+    padding:.5rem 1rem;
+    border-radius: .5rem;
+}
+  
+  
+ 
